@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+
+  <title>Doc Search</title>
+</head>
+
+<header class="bg-white" style="border-bottom-style: solid; border-color: black; border-width: 0.5pt">
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <div class="row">
+          <img src="images\logo.svg" alt="logo" class="mr-3" style="width: 50px; height: 50px;">
+          <h1> Doc Search </h1>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="row float-right mt-2">
+          <a href="about.html" class="mr-3 mt-1"> Für Ärzte </a>
+          <button type="button" class="btn btn-secondary btn-sm">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<body>
+  <div class="container-fluid bg-primary pb-3 pt-3">
+    <div class="container">
+      <div class="row text-center">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <input type="text" class="form-control " placeholder="Arzt suchen">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownSpecialication" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Fachrichtung
+              </button>
+            </div>
+          </div>
+          <div class="input-group-prepend ml-3 mr-3">
+            <input type="text" class="form-control" placeholder="Ort oder PLZ">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownRegion" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Umkreis </button>
+            </div>
+          </div>
+          <a href="searchResults.html"><button type="submit" class="btn btn-secondary">Suchen</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid bg-white">
+    <div class="container pt-3">
+      <u>
+    <h4> Ihre Ergebnisse für [Suchbegriff] in [Region] </h4>
+  </u>
+    <hr />
+  </div>
+  <div class="container pb-4">
+  <div class="form-group">
+    <div class="row pb-3">
+      <div class="col-sm-1 text-center">
+        <label for="dropdownSpecialisation"> Fachbereich: </label>
+      </div>
+      <div class="col-sm-10">
+        <div class="dropdown">
+          <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownSpecialisation" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Fachrichtung
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4 text-center">
+      <a href="practiceDetail.html"><img src="images\doctor.jpg" class="img-fluid" alt="Doctor" style="width:50%; height:75%"> </a>
+    </div>
+    <div class="col-4" style="font-size: 12pt">
+      <p style="font-size: 12pt">
+        <a href="practiceDetail.html"> Praxis Dr. Müller</a><br>
+        Allgemein Medizin <br>
+        Musterstraße 5<br>
+        20000 Musterhausen
+      </p>
+    </div>
+    <div class="col-4">
+      <p style="font-size: 12pt">
+        Termine frei:<br>
+        Mo: 29.06. <br>
+        Mi: 30.06 <br>
+        Do: 01.07.
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4 text-center">
+      <a href=""> <img src="images\dentist_2.jpg" class="img-fluid" alt="Doctor" style="width:50%; height:75%"> </a>
+    </div>
+    <div class="col-4">
+      <p style="font-size: 12pt">
+        <a href="###"> Praxis Dr. Meyer </a> <br>
+        Zahnarzt <br>
+        Kieler Straße 15<br>
+        24105 Kiel
+      </p>
+    </div>
+    <div class="col-4">
+      <p style="font-size: 12pt">
+        Termine frei:<br>
+        Mo: 06.07.<br>
+        Mi: 08.07.<br>
+        Do: 09.07.<br>
+
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4 text-center">
+      <a href=""> <img src="images\dentist.jpg" class="img-fluid" alt="Doctor" style="width:50%; height:75%"> </a>
+    </div>
+    <div class="col-4">
+      <p style="font-size: 12pt">
+        <a href="###"> Praxis Dr. Schulze </a><br>
+        Zahnarzt<br>
+        Preetzer Weg 13<br>
+        24116 Kiel
+      </p>
+    </div>
+    <div class="col-4">
+      <p style="font-size: 12pt">
+        Termine frei:<br>
+        Mo: 29.06.<br>
+        Di: 30.06.<br>
+        Mi: 01.07.<br>
+
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+
+<footer>
+  <div class="container">
+    <hr />
+    <div class="row">
+      <div class="col-md-4">
+        <u>
+          <h6>Kontakt</h6>
+        </u>
+        <p style="font-size: 10pt">
+          Doc Search <br>
+          Musterstraße 3 <br>
+          20000 Musterhausen <br>
+          mail@docsearch.de
+        </p>
+      </div>
+      <div class="col-md-4">
+        <u>
+          <h6>Rechtliches</h6>
+        </u>
+        <p style="font-size: 10pt">
+          Impressum <br>
+          Datenschutz <br>
+          AGB <br>
+        </p>
+      </div>
+      <div class="col-md-4">
+        <u>
+          <h6>Soziale Netzwerke</h6>
+        </u>
+        <p style="font-size: 10pt">
+          Facebook <br>
+          Instagram <br>
+          Twitter <br>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</html>
